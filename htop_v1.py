@@ -83,6 +83,7 @@ def show(**kwargs):
     print('|{:.^67}|'.format('ИНФОРМАЦИЯ О СЕТИ'))
     for key in kwargs['net']:
         print(str(l_print(key)).format(key, kwargs['net'][key]),end=' ')
+    print()
 
 def run():
     show(pc=get_prec(),count_pc=get_count(),temperature=get_temperature(),memor=get_memory(),
