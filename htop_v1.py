@@ -23,6 +23,7 @@ def get_net():
          'Пакетов получено':net.packets_recv}
     )
     return dict
+
 def get_temperature():
     sensor_t = ps.sensors_temperatures()
     dict = {}
