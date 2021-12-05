@@ -24,6 +24,7 @@ def get_net():
     )
     return dict
 
+
 def get_temperature():
     sensor_t = ps.sensors_temperatures()
     dict = {}
