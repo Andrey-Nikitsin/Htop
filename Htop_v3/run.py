@@ -1,7 +1,7 @@
-from module import get_info, show
+from module import output, take_inf
 
 def run():
-    show.show(info=get_info.get_info())
+    output.show(info=take_inf.get_info())
 
 if __name__=='__main__':
     run()
