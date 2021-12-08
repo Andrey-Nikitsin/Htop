@@ -1,11 +1,11 @@
 import psutil as ps
-from Htop_v3.module.lib import dec
+from Htop_v3.module import dec
 
 
 @dec.dec_get
 def get_temperature():
     sensor_t = ps.sensors_temperatures()
-    dict = {'ДАННЫЕ ТЕМПЕРАТУРНЫХ ДАТЧИКОВ':'ДАННЫЕ ТЕМПЕРАТУРНЫХ ДАТЧИКОВ'}
+    dict = {}
     for i,j in sensor_t.items():
         if len(j)>1:
             for elem in j:

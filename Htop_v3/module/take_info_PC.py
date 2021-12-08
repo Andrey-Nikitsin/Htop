@@ -1,13 +1,13 @@
 import psutil as ps
-from Htop_v3.module.lib import dec
+from Htop_v3.module import dec
 
 
 @dec.dec_get
 def get_prec():
-    dict={'ИНФОРМАЦИЯ О ПРОЦЕССОРЕ':'ИНФОРМАЦИЯ О ПРОЦЕССОРЕ'}
+    dict={}
     cpu_prec = ps.cpu_percent(0.5)
-    dict.update({'Процент загрузки ЦП':(cpu_prec,'%')})
+    dict.update({'precent cp':(cpu_prec,'%')})
     cpu_count = ps.cpu_count()
-    dict.update({'Количество ядер':(cpu_count,'num')})
+    dict.update({'count cp':(cpu_count,'num')})
     return dict
 
